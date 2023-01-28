@@ -1,0 +1,7 @@
+The "car_color" field values only when the "has_car" column was true otherwise it should be null
+
+The "friend_id" and "other_friend_id" columns where sometimes null
+
+
+The key in both tables was the id. Non of the fields could be null except "car_color" as mentioned before.
+But althought the identification_card wasen't the key, it steel is unique and must be declared as such.
