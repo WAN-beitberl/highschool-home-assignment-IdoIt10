@@ -1,0 +1,12 @@
+The problems with data were:
+1. There were people without a car with car paint
+2. There were people in the friendship table for whom no friend appeared
+
+Fixing the above problems:
+1. No car color was entered for them - just like for a person without a car in the "student" table
+2. This friendships will not be included in the "friendships" table
+
+Accordingly, for the "friendships" table I defined that the 2 IDs of the members are defined as
+FOREIGN KEY for their ID in the "students" table and according to the ID they were also defined
+as NOT NULL - meaning that there are necessarily two members. The reason for the connection
+is that each column in the "friendships" table is an ID of a student that exists in the "student" table.
