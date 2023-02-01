@@ -7,7 +7,7 @@ import java.util.*;
 public class automatic_report.java {
  
     public static void main(String[] args) {
-        String jdbcURL = "jdbc:mysql://localhost:3306/studentד";
+        String jdbcURL = "jdbc:mysql://localhost:3306/students";
 		
         String username = "root";
         String password = "idoyt1234";
