@@ -19,8 +19,8 @@ CREATE TABLE `students` (
 
 CREATE TABLE `friendships` (
     `id` INT(3) NOT NULL AUTO_INCREMENT,
-    `friend_id` INT(3) NOT NULL,
-    `other_friend_id` INT(3) NOT NULL,
+    CONSTRAINT `friend_id` FOREIGN KEY (`friend_id`) REFERENCES `students`(`id`),
+    CONSTRAINT `other_friend_id` FOREIGN KEY (`other_friend_id`) REFERENCES `students`(`id`),
     PRIMARY KEY (`id`)
 );
 
